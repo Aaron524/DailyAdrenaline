@@ -17,9 +17,11 @@
 		<div class="navbar navbar-default navbar-static-top head"> <!-- try adding navbar-fixed-top-->
 			<div class='container'>
 				<div class='navbar-header'>
-					<a href="http://DailyAdrenaline.com" class='navbar-brand'>
-						<img src="./images/logo.jpg" />
-					</a>
+					<div class='pull-left'>
+						<a href="http://DailyAdrenaline.com">
+							<img class='img-responsive pull-left' src="./images/logo.png" />
+						</a>
+					</div>
 					<button type='button' class='navbar-toggle'
 							data-toggle='collapse'
 							data-target='.navbar-collapse'>
@@ -44,6 +46,14 @@
 			</div>	
 		</div>
 		<div class="#">
+			<div class="row donate">		
+					<a href="#">
+						<div class="col-md-12 text-center">
+							<img src="./images/blog.jpg" />
+							<h1>Donate</h1>
+						</div>	
+					</a>
+			</div>			
 			<div class="row featured">		
 					<a href="#">
 						<div class="col-md-12 text-center">
@@ -52,22 +62,6 @@
 						</div>	
 					</a>
 			</div>
-			<div class="row donate">		
-					<a href="#">
-						<div class="col-md-12 text-center">
-							<img src="./images/blog.jpg" />
-							<h1>Donate</h1>
-						</div>	
-					</a>
-			</div>	
-			<div class="row instagram">		
-					<a href="#">
-						<div class="col-md-12 text-center">
-							<img src="./images/blog.jpg" />
-							<h3>IG</h3>
-						</div>	
-					</a>
-			</div>	
 			<div class="row blog col-md-offset-2 col-md-8">		
 					<a href="#">
 						<div class="col-md-12 text-center">
@@ -75,13 +69,34 @@
 							<h3>Blog</h3>
 						</div>	
 					</a>
-			</div>												
+			</div>		
+			<div id="instafeed" class="col-md-12 text-center">																														<!-- class="row instagram"-->
+					<h2> Instagram div </h2>
+			</div>									
 		</div>
-		<!--<div class="base">
-
-   		</div>-->
 		<script src="http://code.jquery.com/jquery-latest.js"></script>
 		<script src ='js/bootstrap.min.js'</script>
 		<script src ='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'</script>
+		<script type="text/javascript" src="js/instafeed.js-master/instafeed.min.js"></script>
+		<script type="text/javascript">
+		    var feed = new Instafeed({
+		        get: 'tagged',
+		        tagName: 'awesome',
+		        clientId: '413f1a7f9a354fa68b17609d3d32ddd1',
+		    });
+		    feed.run();
+		</script>
+
+
+		<!--<script type="text/javascript">
+		    var feed = new Instafeed({
+		        get: 'user',
+		        userId: '474155044',
+		        clientId: '413f1a7f9a354fa68b17609d3d32ddd1'
+		        target: 'instafeed'
+		        limit: '12'
+		    });
+		    userfeed.run();
+		</script>	-->	
 	</body>
 </html>
