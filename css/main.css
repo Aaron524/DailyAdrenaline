@@ -9,30 +9,12 @@ p {
 	font-size: 20px;
 }
 
-body {
-	background-color:#F9F9F9;
-	color:#F6F6F6
-	height: 100%;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-}
-
-.sunset {
-	background: url(../images/sunset.jpg); 
+.head {
 	background-size:cover;
 	background-repeat: no-repeat;
 	background-position:center center;
-	background-color: yellow;
+	background-color: #3393D0;
 }
-
-/**.base {
-	position: absolute;
-   	bottom: 0;
-   	min-height: 25px;
-   	width: 100%;
-   	background-color: #b3f0ff;
-}**/
-
 
 .navbar {
 	padding:44px;
