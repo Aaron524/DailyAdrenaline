@@ -10,13 +10,13 @@
 				<!--add google analytics here-->		
 		</script>
 		<script src="//load.sumome.com/" data-sumo-site-id="f4d6ddc47a73241c432e287b426f1ed19243f6dde0796a3c1da8318f0792db7a" async="async">      </script>
-	<meta name="description" content="We are focused on helping young children stay motivated and focused rather than turning to crime. ">
+	<meta name="description" content="Our goal is to help children stay motivated and focused on achievment rather than turning to crime">
 	<meta name="keywords" content="adventure, travel, adrenaline, success">
 	</head>
 	<body>
 		<div class="navbar navbar-default navbar-static-top head"> <!-- try adding navbar-fixed-top-->
-			<div class='container'>
-				<div class='navbar-header'>
+			<div class='col-md-offset-1 col-md-10'>
+				<div class='navbar-header '>
 					<div class='pull-left'>
 						<a href="http://DailyAdrenaline.com">
 							<img class='img-responsive pull-left' src="./images/logo.png" />
@@ -35,7 +35,7 @@
 		    			<li>  <!--it's adding a class of "class='open' - if you want it to start as open at it to the li"-->
 		    				<a href="about.html" data-target='#'data-toggle='dropdown'>About <span class='caret'></a> <!--"data-target='#'"   provides that if someone has no java script they still go to the hfref - if they have java it acts with dropdowns etc. -->
 		    				<ul class='dropdown-menu dropdownlinks'>
-		    					<li><a href='/about.html'>Bio</a></li>
+		    					<li><a href='/about.html'>About Us</a></li>
 		    					<li class='divider'></li>
 		    					<li><a href='https://www.instagram.com/aaron_davis_'>Instagram</a></li>
 		    					<li><a href='https://www.twitter.com/ajdavis425'>Twitter</a></li>
@@ -47,16 +47,16 @@
 		</div>
 		<div class="#">
 			<div class="row donate">		
-					<a href="#">
-						<div class="col-md-12 text-center">
-							<img src="./images/blog.jpg" />
-							<h1>Donate</h1>
-						</div>	
-					</a>
+						<div class="text-center">
+							<h2>Keeping kids active and helping to create community through non conventional sports<br> where they can better themselves. <br><br>DA was created by 3 friends in order to share, promote, and celebrate the culture and community of extreme sports.</h2>
+						<a href="#">
+							<h1>Help Make The Dream a Reality - Donate Today</h1>
+						</a>	
+						</div>					
 			</div>			
 			<div class="row featured">		
 					<a href="#">
-						<div class="col-md-12 text-center">
+						<div class="text-center">
 							<img src="./images/blog.jpg" />
 							<h3>Featured</h3>
 						</div>	
@@ -70,7 +70,7 @@
 						</div>	
 					</a>
 			</div>		
-			<div id="instafeed" class="col-md-12 text-center">																														<!-- class="row instagram"-->
+			<div id="instafeed" class="col-md-12 text-center">																														
 					<h2> Instagram div </h2>
 			</div>									
 		</div>
@@ -82,7 +82,7 @@
 		    var feed = new Instafeed({
 		        get: 'tagged',
 		        tagName: 'awesome',
-		        clientId: '413f1a7f9a354fa68b17609d3d32ddd1',
+		        clientId: '413f1a7f9a354fa68b17609d3d32ddd1'
 		    });
 		    feed.run();
 		</script>
