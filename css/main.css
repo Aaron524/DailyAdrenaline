@@ -45,12 +45,15 @@ p {
 
 .donate {
 	background-image: url(../images/IntroBackground.jpg);
+	background-size: cover;	
 	/**background-repeat: no-repeat;
 	background-position: left top;
 	background-attachment: fixed;
 	background-size: 100%;
 	height:100vh;**/
 	min-height: 92%;
+	overflow-x: hidden; 
+	overflow-y: hidden; 	
 }
 
 
