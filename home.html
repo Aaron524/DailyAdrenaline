@@ -6,21 +6,9 @@
 		<link href='css/bootstrap.css' rel='stylesheet'>
 		<link href='css/main.css' rel='stylesheet'>
 		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="css/pongstagr.am.css">																													<!--added-->	
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script>
-				<!--add google analytics here-->		
-		</script>
-		<script type="text/javascript" src="js/instafeed.js-master/instafeed.min.js"></script>
-		<script type="text/javascript">
-		    var feed = new Instafeed({
-		        get: 'tagged',
-		        tagName: 'awesome',
-		        clientId: '413f1a7f9a354fa68b17609d3d32ddd1'
-		    });
-		    feed.run();
-		</script>
-
-		<script> 'add sumo me here '</script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>		
 	<meta name="description" content="A non profit focused on keeping kids active and helping to create community through non conventional sports where they can better themselves.">
 	<meta name="keywords" content="adventure, travel, adrenaline, success">
 	</head>
@@ -31,7 +19,7 @@
 				<div class='navbar-header '>
 					<div class='pull-left'>
 						<a href="http://DailyAdrenaline.com">
-							<img class='img-responsive pull-left' src="./images/logo.png" />
+							<img class='img-responsive pull-left' src="./images/logo.png"/>
 						</a>
 					</div>
 					<button type='button' class='navbar-toggle'
@@ -85,7 +73,7 @@
 										<hr>
 										<p>Bacon ipsum dolor amet brisket bacon meatball corned beef flank shoulder. Chuck sirloin frankfurter chicken ball tip fatback short ribs ham hamburger strip steak. Shoulder corned beef capicola jerky biltong. Meatball pig short loin turkey. Turkey t-bone pork belly tenderloin jerky, porchetta swine. Andouille biltong kevin jerky. Tongue short loin bacon, pastrami tail ground round corned beef ham hock turkey beef.</p>
 										<p>Bacon ipsum dolor amet brisket bacon meatball corned beef flank shoulder. Chuck sirloin frankfurter chicken ball tip fatback short ribs ham hamburger strip steak.</p>
-										<a href="">Full Story</a>
+										<a href="#">Full Story</a>
 								</div>		
 									</div>
 							
@@ -101,33 +89,22 @@
 						</div>	
 					</a>
 			</div>		
-			<div id="instafeed" class="col-md-12 text-center">																														
-					<h2> Instagram div </h2>
-			</div>									
-		</div>
-		<script src="http://code.jquery.com/jquery-latest.js"></script>
-		<script src ='js/bootstrap.min.js'</script>
-		<script src ='//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'</script>
-		<script type="text/javascript" src="js/instafeed.js-master/instafeed.min.js"></script>
-		<script type="text/javascript">
-		    var feed = new Instafeed({
-		        get: 'tagged',
-		        tagName: 'awesome',
-		        clientId: '413f1a7f9a354fa68b17609d3d32ddd1'
-		    });
-		    feed.run();
-		</script>
-
-
-		<!--<script type="text/javascript">
-		    var feed = new Instafeed({
-		        get: 'user',
-		        userId: '474155044',
-		        clientId: '413f1a7f9a354fa68b17609d3d32ddd1'
-		        target: 'instafeed'
-		        limit: '12'
-		    });
-		    userfeed.run();
-		</script>	-->	
+			<div id="selector" class="col-md-12">																														
+			<script>$('#selector').pongstgrm({ show: 'recent' });</script>	
+			</div>															
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="js/boostrap.js"></script>
+		<script src="js/pongstagr.am.js"></script>
+		<script>
+		$(document).ready(function () {
+		 
+		  $('#selector').pongstgrm({
+		    accessId:     '474155044',
+		    accessToken:  '474155044.11e38be.6232039b08f9429489ae20533f305b4f'
+		  });
+		 
+		});
+		</script>	
+		<script>$('#selector').pongstgrm({ show: 'recent' });</script>			
 	</body>
 </html>
