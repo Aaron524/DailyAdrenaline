@@ -2,6 +2,12 @@ html, body, h1, h2, h3, h4, ul, ol, li, p, a, label {
     font-family: "Open Sans", helvetica, sans-serif;
 }
 
+html, body. div{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+}
+
 img {
 	border-radius: 1%;
 }
@@ -28,6 +34,7 @@ p {
 }
 .container-fluid {
 	padding: 0px;
+	overflow-x: hidden;
 }
 
 .navbar-default {
