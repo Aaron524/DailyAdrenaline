@@ -37,6 +37,14 @@ p {
 	overflow-x: hidden;
 }
 
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; 
+
+  display: flex;
+  align-items: center;
+ }
+
 .navbar-default {
 	border-color: #3393D0;
 }
@@ -61,6 +69,14 @@ p {
 	min-height: 92%;
 	overflow-x: hidden; 
 	overflow-y: hidden; 	
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; 
+
+  display: flex;
+  align-items: center;
 }
 
 
