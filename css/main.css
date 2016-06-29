@@ -36,7 +36,7 @@ p {
 }
 .container-fluid {
 	padding: 0px;
-/*	overflow-x: hidden;*/							/*trying to fix IG from being hidden*/
+	overflow-x: hidden;						
 }
 
 .vertical-center {
@@ -206,8 +206,6 @@ button:hover {
 
 .donateContent {
 	position: relative;
-/**	top: 15%;												**************
-	transform: translateY(-25%); 				Any what are you doing with these two lines?**/
 	color: #fff;
 }
 
