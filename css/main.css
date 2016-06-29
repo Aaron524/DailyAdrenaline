@@ -36,7 +36,7 @@ p {
 }
 .container-fluid {
 	padding: 0px;
-	overflow-x: hidden;
+/*	overflow-x: hidden;*/							/*trying to fix IG from being hidden*/
 }
 
 .vertical-center {
