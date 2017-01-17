@@ -32,7 +32,7 @@ p {
 }
 
 .landing {
-	height:100vh;
+	height:100%;
 }
 .container-fluid {
 	padding: 0px;
