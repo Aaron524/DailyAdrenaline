@@ -8,18 +8,192 @@ html, body. div{
     width: 100%;
 }
 
-img {
-	border-radius: 1%;
-}
 p {
 	font-size: 20px;
 	color: #505050;
 	line-height: 32px;
 }
+/*|----------------------------|*/
+/*| Padding and Margin Classes |*/
+/*|----------------------------|*/
+.pad-1x {
+    padding: .5em;
+}
+
+.pad-top-1x {
+    padding-top: .5em;
+}
+
+.pad-right-1x {
+    padding-right: .5em;
+}
+
+.pad-bottom-1x {
+    padding-bottom: .5em;
+}
+
+.pad-left-1x {
+    padding-left: .5em;
+}
+
+.pad-2x {
+    padding: 1em;
+}
+
+.pad-top-2x {
+    padding-top: 1em;
+}
+
+.pad-right-2x {
+    padding-right: 1em;
+}
+
+.pad-bottom-2x {
+    padding-bottom: 1em;
+}
+
+.pad-left-2x {
+    padding-left: 1em;
+}
+
+.pad-top-3x {
+    padding-top: 2em;
+}
+
+.pad-right-3x {
+    padding-right: 30px;
+}
+
+.pad-bottom-3x {
+    padding-bottom: 2em;
+}
+
+.pad-left-3x {
+    padding-left: 2em;
+}
+
+.margin-1x {
+    margin: 1.5em;
+}
+
+.margin-top-1x {
+    margin-top: 1.5em;
+}
+
+.margin-right-1x {
+    margin-right: 1.5em;
+}
+
+.margin-bottom-1x {
+    margin-bottom: 1.5em;
+}
+
+.margin-left-1x {
+    padding-left: 1.5em;
+}
+
+.margin-2x {
+    margin: 2em;
+}
+
+.margin-top-2x {
+    margin-top: 2em;
+}
+
+.margin-right-2x {
+    margin-right: 2em;
+}
+
+.margin-bottom-2x {
+    margin-bottom: 2em;
+}
+
+.margin-left-2x {
+    margin-left: 2em;
+}
+
+.margin-3x {
+    margin: 3em;
+}
+
+.margin-top-3x {
+    margin-top: 3em;
+}
+
+.margin-right-3x {
+    margin-right: 3em;
+}
+
+.margin-bottom-3x {
+    margin-bottom: 3em;
+}
+
+.margin-left-3x {
+    margin-left: 3em;
+}
+
+.align-center {
+	text-align: center;
+	vertical-align: center;
+}
+
+.img-caption {
+	font-size: 12px;
+	color: #aeaeae;
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+
+.andoquote {
+    background: -webkit-linear-gradient(top,#37a2db,#297ba7) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
+    letter-spacing: normal !important;
+    line-height: normal !important;
+    text-transform: uppercase !important;
+    font-size: 2.5em !important;
+    color: #37a2db !important;
+    display: block !important;
+    margin-bottom: 1.2rem !important;
+    padding: 0 !important;
+
+}
+
+.andohead {
+    background: -webkit-linear-gradient(top,#37a2db,#297ba7) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+    font-style: italic !important;
+    font-weight: 400 !important;
+    letter-spacing: normal !important;
+    line-height: normal !important;
+    text-transform: uppercase !important;
+    font-size: 4em !important;
+    color: #37a2db !important;
+    display: block !important;
+    margin-bottom: 1.2rem !important;
+    padding: 0 !important;
+
+}
+
+.andosubhead {
+color: #ffffff;
+font-style: italic;
+font-weight: lighter;
+}
+
 
 .head {
 	background-color: #3393D0;
 	min-height: 8%;
+}
+
+.graybg {
+	background-color: #e0e0e0;
 }
 
 .navbar-header img {
@@ -41,8 +215,7 @@ p {
 
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; 
-
+  min-height: calc(100vh - 90px); 
   display: flex;
   align-items: center;
  }
@@ -61,7 +234,8 @@ p {
 }
 
 .donate {
-	background-image: url(../images/IntroBackground.jpg);
+	background: url(../images/IntroBackground.jpg) no-repeat fixed 50% 50% rgba(0,0,0,.8);
+	background-blend-mode: multiply;
 	background-size: cover;	
 	/**background-repeat: no-repeat;
 	background-position: left top;
@@ -73,10 +247,25 @@ p {
 	overflow-y: hidden; 	
 }
 
+.competition{
+
+	background: url(../images/kids.jpg) no-repeat fixed 50% 50% rgba(0,0,0,.9);
+	background-blend-mode: multiply;
+	background-size: cover;	
+	background-color: 
+	/**background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: fixed;
+	background-size: 100%;
+	height:100vh;**/
+	min-height: 92%;
+	overflow-x: hidden; 
+	overflow-y: hidden; 
+}
+
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; 
-
+  min-height: calc(100vh - 90px); 
   display: flex;
   align-items: center;
 }
@@ -202,6 +391,25 @@ button a:hover {
 button:hover {
 	background-color: transparent;
 	border: 2px solid #3393D0;
+	cursor: pointer;
+}
+
+button.da {
+background-color: #3393D0;
+	color: #ffffff;
+	border-radius: 8px;
+	border: none;
+	margin-top: 25px;
+	font-size: 18px;
+	padding: 20px 40px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: background 0.4s;
+}
+
+button.da:hover {
+	background-color: #2775a7;
+	color: #ffffff;
+	cursor: pointer;
 }
 
 .donateContent {
