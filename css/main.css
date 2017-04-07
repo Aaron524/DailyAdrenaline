@@ -16,6 +16,26 @@ p {
 /*|----------------------------|*/
 /*| Padding and Margin Classes |*/
 /*|----------------------------|*/
+.pad-x {
+    padding: 0px;
+}
+
+.pad-top-x {
+    padding-top: 0px;
+}
+
+.pad-right-x {
+    padding-right: 0px;
+}
+
+.pad-bottom-x {
+    padding-bottom: 0px;
+}
+
+.pad-left-x {
+    padding-left: 0px;
+}
+
 .pad-1x {
     padding: .5em;
 }
@@ -70,6 +90,30 @@ p {
 
 .pad-left-3x {
     padding-left: 2em;
+}
+
+.margin-auto {
+	margin: auto;
+}
+
+.margin-x {
+    margin: 0px !important;
+}
+
+.margin-top-x {
+    margin-top: 0px;
+}
+
+.margin-right-x {
+    margin-right: 0px;
+}
+
+.margin-bottom-x {
+    margin-bottom: 0px;
+}
+
+.margin-left-x {
+    margin-left: 0px;
 }
 
 .margin-1x {
@@ -172,7 +216,7 @@ p {
     letter-spacing: normal !important;
     line-height: normal !important;
     text-transform: uppercase !important;
-    font-size: 4em !important;
+    font-size: 45px !important;
     color: #37a2db !important;
     display: block !important;
     margin-bottom: 1.2rem !important;
@@ -192,6 +236,15 @@ font-weight: lighter;
 	min-height: 8%;
 }
 
+.headalt {
+    background: rgba(0,0,0,.55);
+    min-height: 8%;
+    position: fixed;
+    width: 100%;
+    border: none;
+    height: 60px;
+}
+
 .graybg {
 	background-color: #e0e0e0;
 }
@@ -201,7 +254,7 @@ font-weight: lighter;
 }
 
 .navbar {
-	padding:20px;
+	padding:5px;
 	margin-bottom: 0px;
 }
 
@@ -215,18 +268,99 @@ font-weight: lighter;
 
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: calc(100vh - 90px); 
+  min-height: 100vh; 
   display: flex;
   align-items: center;
  }
+
+.andonav {
+	float: right !important;
+	display: flex;
+}
+
+.andonav a{
+	color: #ffffff;
+	font-size: 16px;
+	padding: 0px 20px;
+	vertical-align: center;
+}
+
+.andonav a:hover {
+	color: #37a2db;
+}
+
+.andonav a:focus {
+	color: #41bdff;
+	outline: none;
+	text-decoration: none;
+}
+
+.directorsocial .fa {
+	padding: 0px 5px;
+	color: #aeaeae;
+}
+
+.directorsocial .fa:hover {
+	color: #3393D0;
+}
+
+.flexy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.flexyflex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.footer {
+	display: flex;
+	align-content: center;
+	background-color: #323232;
+	padding: 10px;
+	font-size: 14px;
+	color: #ffffff;
+}
+
+.footer hr {
+	    width: 15%;
+    color: #ffffff;
+    padding: 0;
+    margin: 10px auto;
+}
+
+.footer p {
+	font-size: 14px;
+}
+
+.footer .fa {
+	padding: 0px 5px;
+	color: #ffffff;
+}
+
+.footer .fa:hover {
+	color: #3393D0;
+}
+
+.youtubevid {
+	margin: auto;
+}
 
 .navbar-default {
 	border-color: #3393D0;
 }
 .navbar-default .navbar-nav > li > a, .navbar-default .navbar-brand  {
-	color:white;
+	color: white;
 	font-family: helvetica, sans-serif;
 	font-size: 18px;
+}
+
+li.donatenav {
+	color: #3393D0;
 }
 
 .featured {
@@ -234,7 +368,7 @@ font-weight: lighter;
 }
 
 .donate {
-	background: url(../images/IntroBackground.jpg) no-repeat fixed 50% 50% rgba(0,0,0,.8);
+	background: url(../images/IntroBackground.jpg) no-repeat fixed 50% 50% rgba(0,0,0,.75);
 	background-blend-mode: multiply;
 	background-size: cover;	
 	/**background-repeat: no-repeat;
@@ -249,7 +383,7 @@ font-weight: lighter;
 
 .competition{
 
-	background: url(../images/kids.jpg) no-repeat fixed 50% 50% rgba(0,0,0,.9);
+	background: url(../images/kids.jpg) no-repeat fixed 50% 50% rgba(0,0,0,.65);
 	background-blend-mode: multiply;
 	background-size: cover;	
 	background-color: 
@@ -265,7 +399,7 @@ font-weight: lighter;
 
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: calc(100vh - 90px); 
+  min-height: 100vh; 
   display: flex;
   align-items: center;
 }
@@ -401,7 +535,7 @@ background-color: #3393D0;
 	border: none;
 	margin-top: 25px;
 	font-size: 18px;
-	padding: 20px 40px;
+	padding: 20px 80px;
   -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: background 0.4s;
 }
@@ -415,27 +549,20 @@ button.da:hover {
 .donateContent {
 	position: relative;
 	color: #fff;
-}
-
-.donateContent h2 {
-	font-size: 60px;
-	line-height: 80px;
-	font-weight: 500;
-	margin-bottom: 30px;
+	margin: auto;
 }
 
 .donateContent p {
 	font-weight: 300;
 	text-align: left;
-	margin-bottom: 45px;
 }
 
 li .donateLink {
-	color: #ffff00;
+	color: #3393D0 !important;
 }
 
 .donateLink:hover {
-	color: #fff;
+	color: #3393D0 !important;
 }
 
 .featured {
