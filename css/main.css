@@ -242,7 +242,6 @@ font-weight: lighter;
     position: fixed;
     width: 100%;
     border: none;
-    height: 60px;
 }
 
 .graybg {
@@ -332,6 +331,21 @@ font-weight: lighter;
     padding: 0;
     margin: 10px auto;
 }
+
+.sponsorlogo {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
+.sponsorlogo:hover {
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+
 
 .footer p {
 	font-size: 14px;
