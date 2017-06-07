@@ -316,7 +316,7 @@ font-weight: lighter;
 	flex-direction: column;
 	align-items: center;
 }
-.footer {
+.footera {
 	display: flex;
 	align-content: center;
 	background-color: #323232;
@@ -325,7 +325,7 @@ font-weight: lighter;
 	color: #ffffff;
 }
 
-.footer hr {
+.footera hr {
 	    width: 15%;
     color: #ffffff;
     padding: 0;
@@ -347,16 +347,16 @@ font-weight: lighter;
 }
 
 
-.footer p {
+.footera p {
 	font-size: 14px;
 }
 
-.footer .fa {
+.footera .fa {
 	padding: 0px 5px;
 	color: #ffffff;
 }
 
-.footer .fa:hover {
+.footera .fa:hover {
 	color: #3393D0;
 }
 
