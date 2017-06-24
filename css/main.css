@@ -230,6 +230,42 @@ font-style: italic;
 font-weight: lighter;
 }
 
+.donaterow {
+	display: flex;
+}
+
+.donate-box {
+	display: flex;
+	padding: 10px 60px 15px 60px;
+	background-color: #efefef;
+}
+
+.donatecontent {
+	display: flex;
+	justify-content: center;
+	padding: 15px 60px;
+}
+
+.subscribeform {
+display: flex;
+align-items: center;
+}
+
+form#pi-form-subscribe-section {
+    display: flex;
+}
+
+
+input#pi-mailchimp-section {
+    margin: 0px;
+    width: 350px;
+}
+
+button#pi-subscribe-button {
+margin-top: 0px;
+    padding: 19px 30px;
+    border-radius: 0px;
+}
 
 .head {
 	background-color: #3393D0;
@@ -505,11 +541,31 @@ li.donatenav {
 	padding-bottom: 0;
 }
 
+@media only screen and (max-width : 900px) {
+	.donate-box {
+	flex-direction: column;
+}
+
+form#pi-form-subscribe-section {
+    margin: 0px 0px 20px 0px;
+}
+
+}
+
 @media only screen and (max-width : 768px) {
 .navbar-default .navbar-nav > li > a, .navbar-nav .dropdown-menu  > li > a   {
 	color:black;
 	background-color: white;
 }
+
+.donate-box {
+	width: 100%;
+}
+
+input#pi-mailchimp-section {
+	width: 235px;
+}
+
 
 }
 
@@ -597,6 +653,10 @@ li .donateLink {
 	width: 100%;
 	min-height: 50%;						/**so that things don't overlay on mobile**/
 	border-radius: 0;
+}
+
+.donatecontent {
+    padding: 15px 25px;
 }
 
 #FeaturedStory {
