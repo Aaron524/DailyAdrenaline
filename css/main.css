@@ -598,7 +598,7 @@ button:hover {
 	cursor: pointer;
 }
 
-button.da {
+.dabutton{
 background-color: #3393D0;
 	color: #ffffff;
 	border-radius: 8px;
@@ -610,7 +610,7 @@ background-color: #3393D0;
     transition-duration: background 0.4s;
 }
 
-button.da:hover {
+.dabutton:hover {
 	background-color: #2775a7;
 	color: #ffffff;
 	cursor: pointer;
