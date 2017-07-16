@@ -431,6 +431,34 @@ li.donatenav {
 	overflow-y: hidden; 	
 }
 
+.submit {
+	background: url(../images/success-background1.jpg) no-repeat fixed 50% 50% rgba(0,0,0,.75);
+	background-blend-mode: multiply;
+	background-size: cover;	
+	/**background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: fixed;
+	background-size: 100%;
+	height:100vh;**/
+	min-height: 92%;
+	overflow-x: hidden; 
+	overflow-y: hidden; 	
+}
+
+.donate {
+	background: url(../images/success-background2.jpg) no-repeat fixed 50% 50% rgba(0,0,0,.75);
+	background-blend-mode: multiply;
+	background-size: cover;	
+	/**background-repeat: no-repeat;
+	background-position: left top;
+	background-attachment: fixed;
+	background-size: 100%;
+	height:100vh;**/
+	min-height: 92%;
+	overflow-x: hidden; 
+	overflow-y: hidden; 	
+}
+
 .competition{
 
 	background: url(../images/kids.jpg) no-repeat fixed 50% 50% rgba(0,0,0,.65);
@@ -567,6 +595,14 @@ input#pi-mailchimp-section {
 }
 
 
+.facebookbtn {
+	margin: 10px !important;
+}
+
+.instagrambtn {
+	margin: 10px !important;
+}
+
 }
 
 button {
@@ -625,6 +661,7 @@ background-color: #3393D0;
 .donateContent p {
 	font-weight: 300;
 	text-align: left;
+	color: #ffffff;
 }
 
 li .donateLink {
@@ -633,6 +670,41 @@ li .donateLink {
 
 .donateLink:hover {
 	color: #3393D0 !important;
+}
+
+
+.facebookbtn {
+	background-color: #3b5998;
+	color: #ffffff;
+	border-radius: 8px;
+    border: none;
+    margin-top: 25px;
+    font-size: 18px;
+    padding: 20px 80px;
+    -webkit-transition-duration: 0.4s;
+}
+
+.facebookbtn:hover {
+	    background-color: #31497d;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.instagrambtn {
+	background-color: #d0710b;
+	color: #ffffff;
+	border-radius: 8px;
+    border: none;
+    margin-top: 25px;
+    font-size: 18px;
+    padding: 20px 80px;
+    -webkit-transition-duration: 0.4s;
+}
+
+.instagrambtn:hover {
+	    background-color: #b36109;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 .featured {
