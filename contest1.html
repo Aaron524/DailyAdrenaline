@@ -18,6 +18,12 @@
     <meta name="keywords" content="daily adrenaline, nonprofit for the kids, nonprofit for extreme sports">
     <link rel="shortcut icon" href="favicon.ico">
     <script src="//load.sumome.com/" data-sumo-site-id="97a8c06de372226412cc3f5c1c93d022d37ac5cae5f888f454172f58d2c83024" async="async"></script>
+        <script>
+    $(function() {
+        $("#header").load("/header");
+        $("#footera").load("/footera");
+    });
+    </script>
     <script>
     (function(i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
@@ -39,24 +45,7 @@
 <body>
     <div class='container-fluid'>
         <div class='landing'>
-            <div class="navbar navbar-default navbar-static-top headalt">
-                <!-- try adding navbar-fixed-top-->
-                <div class='col-md-offset-1 col-md-10 pad-top-1x flexy pad-bottom-1x'>
-                    <div class='navbar-header'>
-                        <div class='pull-left'>
-                            <a href="http://DailyAdrenaline.com">
-                                <img class='img-responsive pull-left' src="./images/logo1.png" />
-                            </a>
-                        </div>
-                    </div>
-                    <ul class='andonav margin-x'>
-                        <a href="mailto:info@DailyAdrenaline.com?subject=Contact from DailyAdrenaline.com" class="hidden-xs">Contact</a>
-                        <a href="#" class="hidden-xs">Donate</a>
-                        <a href="mailto:info@DailyAdrenaline.com?subject=Contact from DailyAdrenaline.com" class="visible-xs"><i class="fa fa-2x fa-envelope-o" aria-hidden="true"></i></a>
-                        <a href="#" class="visible-xs"><i class="fa fa-2x fa-dollar" aria-hidden="true"></i></a>
-                    </ul>
-                </div>
-            </div>
+    <div id="header"></div>     
             <div class="competition vertical-center img-responsive">
                 <div class="donateContent text-center col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                     <h2 class="andohead">Skate Competition</h2>
@@ -172,12 +161,6 @@
         </div>
         <footer class="footer">
         </footer>
-        <div class='footera'>
-            <div class="container flexyflex">
-                <div class="socialicons"><a href="https://www.facebook.com/dailyadrenaline/" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a> <a href="https://www.instagram.com/dailyadrenaline/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
-                <hr class="footer">
-                <p class="footercopy">Copyright Daily Adrenaline 2017</p>
-            </div>
-        </div>
+    <div id="footera"></div>        
     </div>
 </body>

@@ -641,15 +641,45 @@ background-color: #3393D0;
 	border: none;
 	margin-top: 25px;
 	font-size: 18px;
-	padding: 20px 80px;
+	padding: 20px 20px;
   -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: background 0.4s;
+    min-width: 150px;
+    max-width: 150px;   
 }
 
 .dabutton:hover {
 	background-color: #2775a7;
 	color: #ffffff;
 	cursor: pointer;
+}
+
+.dabuttongreen{
+background-color: #8fe035;
+	color: #ffffff;
+	border-radius: 8px;
+	border: none;
+	margin-top: 25px;
+	font-size: 18px;
+	padding: 20px 20px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: background 0.4s;
+    min-width: 150px;
+    max-width: 150px;   
+}
+
+.dabuttongreen:hover {
+	background-color: #82ae50;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+@media (max-width: 420px) {
+.donationbuttons {
+    margin: 0px auto;
+    min-width: 100%;
+
+}
 }
 
 .donateContent {
@@ -883,3 +913,5 @@ textarea {
 	padding: 35px 0px;
 	background-color: #f9f9f9;
 }
+
+
